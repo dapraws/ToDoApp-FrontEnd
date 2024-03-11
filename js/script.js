@@ -191,7 +191,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener(SAVED_EVENT, () => {
-  console.log("Data berhasil di simpan.");
+  console.log(localStorage.getItem(STORAGE_KEY));
+  alert("Data berhasil disimpan!");
 });
 
 document.addEventListener(RENDER_EVENT, function () {
